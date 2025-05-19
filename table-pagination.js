@@ -223,24 +223,13 @@
         $parentContainer.append('<div class="page-list-table-' + $tableId + ' d-flex justify-content-center align-items-center mt-2"></div>');
 
         // Prev Button
-//        $('.page-list-table-' + $tableId).append('<button type="button" class="btn btn-outline-primary btn-sm me-2 table-pagination-prev-btn-' + $tableId + '">Prev</button>');
-//
-//        // Page Counter
-//        $('.page-list-table-' + $tableId).append('<span class="table-pagination-current-page-' + $tableId + ' text-dark small  mx-2">Page 1/' + $totalPage + '</span>');
-//
-//        // Next Button
-//        $('.page-list-table-' + $tableId).append('<button type="button" class="btn btn-outline-primary btn-sm table-pagination-next-btn-' + $tableId + '">Next</button>');
+        $('.page-list-table-' + $tableId).append('<button type="button" class="btn btn-outline-primary btn-sm me-2 table-pagination-prev-btn-' + $tableId + '">Prev</button>');
 
-        // Bootstrap-style button group
-        $('.page-list-table-' + $tableId).append(
-                '<div class="btn-group btn-group-sm" role="group" aria-label="Pagination">' +
-//                '<button type="button" class="btn btn-outline-secondary table-pagination-first-btn-' + $tableId + '">&laquo;</button>' +
-                '<button type="button" class="btn btn-outline-secondary table-pagination-prev-btn-' + $tableId + '">Prev</button>' +
-                '<button type="button" class="btn btn-light disabled fw-bold table-pagination-current-page-' + $tableId + '">Page 1/' + $totalPage + '</button>' +
-                '<button type="button" class="btn btn-outline-secondary table-pagination-next-btn-' + $tableId + '">Next</button>' +
-//                '<button type="button" class="btn btn-outline-secondary table-pagination-last-btn-' + $tableId + '">&raquo;</button>' +
-                '</div>'
-                );
+        // Page Counter
+        $('.page-list-table-' + $tableId).append('<span class="table-pagination-current-page-' + $tableId + ' text-dark small  mx-2">Page 1/' + $totalPage + '</span>');
+
+        // Next Button
+       $('.page-list-table-' + $tableId).append('<button type="button" class="btn btn-outline-primary btn-sm table-pagination-next-btn-' + $tableId + '">Next</button>');
 
 
         $('.table-pagination-pagination-num-' + $tableId).eq(0).after('<a class="more-btn-first-' + $tableId + '">..</a>');
